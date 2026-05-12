@@ -1,10 +1,17 @@
 import { clsx } from "clsx";
+import type { JSX } from "react";
+
+type WordLettersTypes = {
+  currentWord: string;
+  guessedLetters: string[];
+  isGameLost: boolean;
+};
 
 export default function WordLetters({
   currentWord,
   guessedLetters,
   isGameLost,
-}) {
+}: WordLettersTypes): JSX.Element {
   return (
     <section className="word">
       {currentWord.split("").map((letter, index) => {

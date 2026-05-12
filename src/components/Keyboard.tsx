@@ -1,4 +1,13 @@
 import { clsx } from "clsx";
+import type { JSX } from "react";
+
+type KeyboardProps = {
+  alphabet: "abcdefghijklmnopqrstuvwxyz";
+  guessedLetters: string[];
+  currentWord: string;
+  isGameOver: boolean;
+  addGuessedLetter: (letter: string) => void;
+};
 
 export default function Keyboard({
   alphabet,
@@ -6,7 +15,7 @@ export default function Keyboard({
   currentWord,
   isGameOver,
   addGuessedLetter,
-}) {
+}: KeyboardProps): JSX.Element {
   const keyboardElements = alphabet.split("").map((letter) => {
     const isGuessed = guessedLetters.includes(letter);
     const isCorrect = isGuessed && currentWord.includes(letter);
