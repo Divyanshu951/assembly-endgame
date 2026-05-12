@@ -31,7 +31,7 @@ export const words: string[] = [
   "beautiful",
   "because",
   "before",
-  "behavioral",
+  "behaviour",
   "belief",
   "berry",
   "between",

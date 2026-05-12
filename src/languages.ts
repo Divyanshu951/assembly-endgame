@@ -1,7 +1,12 @@
+/*
+CHALLENGE: Type this 'languages' array
+HINT: There are 2 valid ways you can do this
+*/
+
 type Language = {
-  name: String;
-  backgroundColor: String;
-  color: String;
+  name: string;
+  backgroundColor: string;
+  color: string;
 };
 
 export const languages: Language[] = [
